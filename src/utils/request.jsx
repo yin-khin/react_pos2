@@ -13,7 +13,8 @@ const request = (path="",method="GET" , data={}) =>{
         headers : isFormData
             ? {}
             : {
-                'Content-Type' : 'application/json'
+                'Content-Type' : 'application/json',
+                 'Authorization': `Bearer ${localStorage.getItem('token') || ''}`
             }
     })
     .then((response) =>{
