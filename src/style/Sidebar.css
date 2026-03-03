@@ -1,0 +1,128 @@
+.sidebar {
+  width: 250px;
+  background-color: #2d3748;
+  color: #e2e8f0;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #4a5568;
+  text-align: center;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f7fafc;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 10px;
+}
+
+.nav-item {
+  background: transparent;
+  border: none;
+  color: #cbd5e0;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-item:hover {
+  background-color: #4a5568;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.nav-item.active {
+  background-color: #667eea;
+  color: #fff;
+  border-left: 3px solid #fff;
+}
+
+.submenu-toggle {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.submenu-toggle.open {
+  transform: rotate(180deg);
+}
+
+.nav-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(74, 85, 104, 0.5);
+  border-radius: 6px;
+  margin: 5px 10px;
+  overflow: hidden;
+}
+
+.submenu-item {
+  background: transparent;
+  border: none;
+  color: #a0aec0;
+  padding: 10px 15px;
+  padding-left: 35px;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.submenu-item:hover {
+  background-color: #4a5568;
+  color: #fff;
+  transform: translateX(3px);
+}
+
+.submenu-item.active {
+  background-color: #667eea;
+  color: #fff;
+  border-left: 2px solid #fff;
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}

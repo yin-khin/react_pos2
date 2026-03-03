@@ -1,0 +1,54 @@
+router 
+-   Route
+-   Link
+-   navigate &  useNavigat
+-   useParams
+-   Nested Routes
+
+
+
+Homework 
+-Create Menu UI using Link from React Router-DOM 
+-Create data in array to store , using map to dispay 
+
+
+
+- Homework 
+1- create product component 
+2- create array object []
+3- push data from Form to array 
+4- display using map method 
+
+
+useState()
+useEffect()
+
+syntax : 
+ 1-   useEffect(()=>{
+        //code runing
+    })
+ 2-  useEffect(()=>{
+    //code
+ },[])
+
+ 3- useEffect(()=>{
+    //code
+ },[arr, de])
+
+
+
+1-App --> Homepage -- > profile - > phone number 
+2-APP --> footer - Phone number 
+
+useContext = 
+   workflow 
+   1- Create Context == Globle value paste to component
+   2- Provide Context 
+   3- useContext 
+
+
+
+Homepage 
+- Create Login Form 
+- Intergrate with backend API login 
+- after login success can be navigate to page admin 
